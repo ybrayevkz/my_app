@@ -1,18 +1,20 @@
 import React from "react";
-import {BrowserRouter as Router} from 'react-router-dom'
-import {useRoutes} from "./routes";
-import './App.css'
+import './App.css';
+import {Home} from "./pages";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import {AuthPage} from "./pages/AuthPage";
+
 
 
 function App() {
-    const routes = useRoutes(false)
   return (
-      <Router>
-        <div className="container">
-            {routes}
-        </div>
-      </Router>
-  )
+    <Router>
+        <Routes>
+            <Route path='/' element={<Home />} exact />
+            <Route path='/signin' element={<AuthPage />} exact />
+        </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
