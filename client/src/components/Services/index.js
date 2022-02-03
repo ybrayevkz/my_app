@@ -6,30 +6,31 @@ import {ServicesIcon} from "./ServicesElements";
 import {ServicesCard} from "./ServicesElements";
 import {ServicesH2} from "./ServicesElements";
 import {ServicesP} from "./ServicesElements";
-import Icon1 from "../../images/svg-01.svg";
-import Icon2 from "../../images/svg-03.svg";
-import Icon3 from "../../images/svg-05.svg";
+import homepage_service_studying from "../../images/HomePage/homepage_service_studying.svg";
+import homepage_service_exercises from "../../images/HomePage/homepage_service_exercises.svg";
+import homepage_service_exam from "../../images/HomePage/homepage_service_exam.svg";
 
 export const Services = () => {
     return(
         <>
             <ServicesContainer id='services'>
-                <ServicesH1>Our services</ServicesH1>
+                <ServicesH1>Наши курсы состоят из 3 частей</ServicesH1>
                 <ServicesWrapper>
                     <ServicesCard>
-                        <ServicesIcon src={Icon1} />
-                        <ServicesH2>Reduce expenses</ServicesH2>
-                        <ServicesP>We help reduce your fees and increase your overall revenue.</ServicesP>
+                        <ServicesIcon src={homepage_service_studying} />
+                        <ServicesH2>Тренинг</ServicesH2>
+                        <ServicesP>Вы будете тренироваться в каждом курсе практикуя ваши знания.</ServicesP>
                     </ServicesCard>
                     <ServicesCard>
-                        <ServicesIcon src={Icon2} />
-                        <ServicesH2>Virtual offices</ServicesH2>
-                        <ServicesP>You can access our platform online anywhere in the world.</ServicesP>
+                        <ServicesIcon src={homepage_service_exercises} />
+                        <ServicesH2>Задания</ServicesH2>
+                        <ServicesP>При прохождения курса по мимо тренинга буду еще задания для того что бы вы
+                            освоили данный курс.</ServicesP>
                     </ServicesCard>
                     <ServicesCard>
-                        <ServicesIcon src={Icon3} />
-                        <ServicesH2>Premium Benefits</ServicesH2>
-                        <ServicesP>Unlock our special membership card thatreturns 5% cash back.</ServicesP>
+                        <ServicesIcon src={homepage_service_exam} />
+                        <ServicesH2>Экзаменация</ServicesH2>
+                        <ServicesP>В конце курса вас будет ждать экзаменация по данному курсу.</ServicesP>
                     </ServicesCard>
                 </ServicesWrapper>
             </ServicesContainer>

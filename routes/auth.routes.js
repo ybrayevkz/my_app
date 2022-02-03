@@ -10,8 +10,10 @@ const router = Router()
 router.post(
     '/register',
     [
+        check('firstname', 'Минимальная длина вашей фамилий 2 символа').isLength({min: 2}),
+        check('firstname', 'Минимальная длина вашей  2 символа').isLength({min: 2}),
         check('email', 'Некорректный email').isEmail(),
-        check('password', 'Минимальная длина пароля 6 символов').isLength({min: 6})
+        check('password', 'Минимальная длина пароля 8 символов').isLength({min: 8})
     ],
     async (req, res) => {
     try{
@@ -25,7 +27,7 @@ router.post(
             })
         }
 
-        const {email, password} = req.body
+        const {firstname, lastname, nickname, email, password} = req.body
 
         const candidate = await User.findOne({email})
 
@@ -34,7 +36,7 @@ router.post(
         }
 
         const hashedPassword = await bcrypt.hash(password, 12)
-        const user = new User({email, password: hashedPassword})
+        const user = new User({firstname, lastname, email, password: hashedPassword})
 
         await user.save()
 
@@ -48,6 +50,8 @@ router.post(
 router.post(
     '/login',
     [
+        check('firstname', 'Введите ваше имя').exists(),
+        check('lastname', 'Введите ваше фамилия').exists(),
         check('email', 'Введите корректный email').normalizeEmail().isEmail(),
         check('password', 'Введите пароль').exists()
     ],
@@ -62,12 +66,12 @@ router.post(
                 })
             }
 
-            const {email, password} = req.body
+            const {firstname, lastname, email, password} = req.body
 
             const user = await User.findOne({email})
 
             if(!user){
-                return res.status(400).json({message: 'Что-то пошло не так, попробуйте позже'})
+                return res.status(400).json({message: 'Пользователь не найден'})
             }
 
             const isMatch = await bcrypt.compare(password, user.password)

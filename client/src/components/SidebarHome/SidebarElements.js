@@ -49,7 +49,7 @@ export const SidebarMenu = styled.ul`
   }
 `
 
-export const SidebarLink = styled(LinkR)`
+export const SidebarLink = styled(LinkS)`
   display: flex;
   align-items: center;
   justify-content: center;

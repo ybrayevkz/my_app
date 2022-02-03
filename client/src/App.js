@@ -2,7 +2,7 @@ import React from "react";
 import './App.css';
 import {Home} from "./pages";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import {AuthPage} from "./pages/AuthPage";
+import {AuthorsPage} from "./pages/AuthorsPage";
 
 
 
@@ -11,7 +11,7 @@ function App() {
     <Router>
         <Routes>
             <Route path='/' element={<Home />} exact />
-            <Route path='/signin' element={<AuthPage />} exact />
+            <Route path='/authors' element={<AuthorsPage />} exact />
         </Routes>
     </Router>
   );

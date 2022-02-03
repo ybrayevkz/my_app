@@ -6,7 +6,7 @@ import {FooterWrap} from "./FooterElements";
 import {FooterLinksWrapper} from "./FooterElements";
 import {FooterLinkItems} from "./FooterElements";
 import {FooterLinkTitle} from "./FooterElements";
-import {FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube} from "react-icons/fa";
+import {FaFacebook, FaInstagram, FaLinkedin, FaTelegram, FaTwitter, FaVk, FaYoutube} from "react-icons/fa";
 import {SocialIcons} from "./FooterElements";
 import {SocialMediaWrap} from "./FooterElements";
 import {SocialLogo} from "./FooterElements";
@@ -31,35 +31,22 @@ export const Footer = () => {
                 <FooterLinksContainer>
                     <FooterLinksWrapper>
                         <FooterLinkItems>
-                            <FooterLinkTitle>About Us</FooterLinkTitle>
-                            <FooterLink to='/'>How it works</FooterLink>
-                            <FooterLink to='/'>Testimonials</FooterLink>
-                            <FooterLink to='/'>Careers</FooterLink>
-                            <FooterLink to='/'>Investors</FooterLink>
-                            <FooterLink to='/'>Terms of Service</FooterLink>
+                            <FooterLinkTitle>О нас</FooterLinkTitle>
+                            <FooterLink to='/authors'>Автор проекта</FooterLink>
+                            <FooterLink to='/'>Конфиденциальность и условия</FooterLink>
                         </FooterLinkItems>
                         <FooterLinkItems>
-                            <FooterLinkTitle>Contact Us</FooterLinkTitle>
-                            <FooterLink to='/'>Contact</FooterLink>
-                            <FooterLink to='/'>Support</FooterLink>
-                            <FooterLink to='/'>Destinations</FooterLink>
-                            <FooterLink to='/'>Sponsors</FooterLink>
+                            <FooterLinkTitle>Для связи с нами</FooterLinkTitle>
+                            <FooterLink to='/'>Наши контакты</FooterLink>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                     <FooterLinksWrapper>
                         <FooterLinkItems>
-                            <FooterLinkTitle>Videos</FooterLinkTitle>
-                            <FooterLink to='/'>Submit Video</FooterLink>
-                            <FooterLink to='/'>Ambassadors</FooterLink>
-                            <FooterLink to='/'>Agency</FooterLink>
-                            <FooterLink to='/'>Influencer</FooterLink>
-                        </FooterLinkItems>
-                        <FooterLinkItems>
-                            <FooterLinkTitle>Social Media</FooterLinkTitle>
+                            <FooterLinkTitle>Социальные сети</FooterLinkTitle>
                             <FooterLink to='/'>Instagram</FooterLink>
-                            <FooterLink to='/'>Facebook</FooterLink>
+                            <FooterLink to='/'>VK</FooterLink>
+                            <FooterLink to='/'>Telegram</FooterLink>
                             <FooterLink to='/'>Youtube</FooterLink>
-                            <FooterLink to='/'>Twitter</FooterLink>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                 </FooterLinksContainer>
@@ -67,22 +54,19 @@ export const Footer = () => {
                     <SocialMediaWrap>
                         <SocialLogo to='/' onClick={toggleHome}>
                             <FooterLogoIcon src={logo} alt='logo'/>ybrayevweb.</SocialLogo>
-                        <WebsiteRights>ybrayevweb. © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
+                        <WebsiteRights>ybrayevweb. © {new Date().getFullYear()} Все права защищены.</WebsiteRights>
                         <SocialIcons>
                             <SocialIconLink href='/' target='_blank' aria-label="Facebook">
-                                <FaFacebook />
-                            </SocialIconLink>
-                            <SocialIconLink href='/' target='_blank' aria-label="Youtube">
-                                <FaYoutube />
-                            </SocialIconLink>
-                            <SocialIconLink href='/' target='_blank' aria-label="Instagram">
                                 <FaInstagram />
                             </SocialIconLink>
-                            <SocialIconLink href='/' target='_blank' aria-label="Twitter">
-                                <FaTwitter />
+                            <SocialIconLink href='/' target='_blank' aria-label="Youtube">
+                                <FaVk />
                             </SocialIconLink>
-                            <SocialIconLink href='/' target='_blank' aria-label="Linkedin">
-                                <FaLinkedin />
+                            <SocialIconLink href='/' target='_blank' aria-label="Instagram">
+                                <FaTelegram />
+                            </SocialIconLink>
+                            <SocialIconLink href='/' target='_blank' aria-label="Twitter">
+                                <FaYoutube />
                             </SocialIconLink>
                         </SocialIcons>
                     </SocialMediaWrap>

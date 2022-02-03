@@ -1,6 +1,7 @@
-import svg1 from "../../images/svg-01.svg";
-import svg2 from "../../images/svg-02.svg";
-import svg3 from "../../images/svg-03.svg";
+import homepage_programmer_image from "../../images/HomePage/homepage_programmer.svg";
+import homepage_account_image from "../../images/HomePage/homepage_account.svg";
+import homepage_certication_image from "../../images/HomePage/homepage_certification.svg";
+
 
 
 export const homeObjOne = {
@@ -8,15 +9,15 @@ export const homeObjOne = {
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'Premium Bank',
-    headline: 'Umlimited Transactions with zero fees',
-    description: 'Get access to our exclusive app that allows you to send unlimited transactions without getting ' +
-        'charged any fees.',
-    buttonLabel: 'Get started',
+    topLine: 'Почему вы должны изучать наши курсы?',
+    headline: 'Даже освоив лишь основы вы остаетесь конкурентоспособным на рынке труда.',
+    description: 'В среднем мировая статистика гласит что средняя зарплата web-разработчика состовляет $50 313/в год',
+    buttonLabel: 'Подробнее по web-разработке...',
     imgStart: false,
-    img: svg1,
+    img: homepage_programmer_image,
     alt: 'Car',
     dark: true,
+    direct: '/',
     primary: true,
     darkText: false
 }
@@ -26,14 +27,14 @@ export const homeObjTwo = {
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
-    topLine: 'Unlimited Access',
-    headline: 'Login to your account at any time',
-    description: 'We have you covered no matter where you are located. All you need is an internet connection' +
-        ' and a phone or computer.',
-    buttonLabel: 'Learn More',
+    topLine: 'Что вас ждет по окончанию каждого курса?',
+    headline: 'Вы будете сертифицированы по данному курсу',
+    description: 'Когда вы закончите обучения и задания данного курса вас ждет экзаменация по данному курсу на сертификат.',
+    buttonLabel: 'Подробнее о сертификации...',
     imgStart: true,
-    img: svg2,
+    img: homepage_certication_image,
     alt: 'Electrocar',
+    direct: '/',
     dark: false,
     primary: false,
     darkText: true
@@ -44,15 +45,16 @@ export const homeObjThree = {
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
-    topLine: 'Join our Team',
-    headline: 'Creating an account is extremely easy',
-    description: 'Get everything set up and ready in under 10 minutes. All you need to do is add your information' +
-        ' and you\'re ready to go.',
-    buttonLabel: 'Start now!',
+    topLine: 'Присоединяйся к нам',
+    headline: 'Создание аккаунта обойдется тебе всего лишь 2 минуты',
+    description: 'Аккаунт нужен для того что бы хранить все ваши результаты и достижения при прохождении наших курсов.' +
+        ' А так же для получения сертификата нам понадобится ваши данные.',
+    buttonLabel: 'Создать аккаунт!',
     imgStart: false,
-    img: svg3,
-    alt: 'Teaching',
+    img: homepage_account_image,
+    alt: 'homepage_accont_image',
     dark: false,
+    direct: '/signup',
     primary: false,
     darkText: true
 }

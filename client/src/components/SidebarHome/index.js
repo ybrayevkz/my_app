@@ -8,7 +8,7 @@ import {SidebarMenu} from "./SidebarElements";
 import {SideBtnWrap} from "./SidebarElements";
 import {SidebarRoute} from "./SidebarElements";
 
-export const Sidebar = ({ toggle, isOpen }) => {
+export const SidebarHome = ({ toggle, isOpen }) => {
     return(
         <SidebarContainer isOpen={isOpen} onClick={toggle}>
             <Icon onClick={toggle}>
@@ -16,16 +16,16 @@ export const Sidebar = ({ toggle, isOpen }) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to='/about' onClick={toggle}>
+                    <SidebarLink to='about' onClick={toggle}>
                         Введение
                     </SidebarLink>
-                    <SidebarLink to='/discover' onClick={toggle}>
+                    <SidebarLink to='discover' onClick={toggle}>
                         Сертификация
                     </SidebarLink>
-                    <SidebarLink to='/services' onClick={toggle}>
+                    <SidebarLink to='services' onClick={toggle}>
                         О курсах
                     </SidebarLink>
-                    <SidebarLink to='/signup' onClick={toggle}>
+                    <SidebarLink to='signup' onClick={toggle}>
                         Зарегистрироваться
                     </SidebarLink>
                 </SidebarMenu>

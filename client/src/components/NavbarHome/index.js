@@ -10,19 +10,34 @@ import {FaBars} from "react-icons/fa"
 import {NavBtn} from "./NavbarElements";
 import {NavBtnLink} from "./NavbarElements";
 import {IconContext} from "react-icons/lib";
+import {animateScroll as scroll} from "react-scroll";
 import logo from '../../images/my_final_logo.png';
 import {NavLogoIcon} from "./NavbarElements";
 
 
-export const Navbar = ({ toggle }) => {
+export const NavbarHome = ({ toggle }) => {
+    const [scrollNav, setScrollNav] = useState(false);
 
+    const changeNav = () => {
+        if(window.scrollY >= 80){
+            setScrollNav(true)
+        } else {
+            setScrollNav(false)
+        }
+    }
 
+    useEffect(() => {
+        window.addEventListener('scroll', changeNav)}, [])
+
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    }
     return (
         <>
             <IconContext.Provider value={{color: '#fff'}}>
-                <Nav>
+                <Nav scrollNav={scrollNav}>
                     <NavbarContainer>
-                        <NavLogo to='/'>
+                        <NavLogo to='/'onClick={toggleHome} >
                             <NavLogoIcon src={logo} alt='logo' />ybrayevweb.
                         </NavLogo>
                         <MobileIcon onClick={toggle}>
@@ -30,19 +45,19 @@ export const Navbar = ({ toggle }) => {
                         </MobileIcon>
                         <NavMenu>
                             <NavItem>
-                                <NavLinks to='/about' smooth={true} duration={500} spy={true}
+                                <NavLinks to='about' smooth={true} duration={500} spy={true}
                                           exact ='true' offset={-80}>Введение</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to='/discover' smooth={true} duration={500} spy={true}
+                                <NavLinks to='discover' smooth={true} duration={500} spy={true}
                                           exact ='true' offset={-80}>Сертификация</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to='/services' smooth={true} duration={500} spy={true}
+                                <NavLinks to='services' smooth={true} duration={500} spy={true}
                                           exact ='true' offset={-80}>О курсах</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to='/signup' smooth={true} duration={500} spy={true}
+                                <NavLinks to='signup' smooth={true} duration={500} spy={true}
                                           exact ='true' offset={-80}>Зарегистрироваться</NavLinks>
                             </NavItem>
                         </NavMenu>

@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import Video from "../../videos/video.mp4"
-import {HeroContainer} from "./HeroElements";
+import {HeroContainer, TitleSpan} from "./HeroElements";
 import {HeroBg} from "./HeroElements";
 import {VideoBg} from "./HeroElements";
 import {HeroContent} from "./HeroElements";
@@ -24,14 +24,14 @@ export const HeroSection = () => {
                 <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
             </HeroBg>
             <HeroContent>
-                <HeroH1>Learn WEB-Technology with ybrayevweb.</HeroH1>
-                <HeroP>Sign up for a new account and choose your course to learn absolutely free.</HeroP>
+                <HeroH1>Изучи "Web-технологии" вместе с <TitleSpan>ybrayevweb.</TitleSpan></HeroH1>
+                <HeroP>Для того что бы приступить к занятиям вы должны зарегистрироваться.</HeroP>
                 <HeroBtnWrapper>
                     <Button to = "signup" onMouseEnter={onHover}
                             onMouseLeave={onHover}
                             primary='true'
                             dark='true'>
-                        Get started {hover ? <ArrowForward /> : <ArrowRight />}
+                        Зарегистрироваться {hover ? <ArrowForward /> : <ArrowRight />}
                     </Button>
                 </HeroBtnWrapper>
             </HeroContent>
