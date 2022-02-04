@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const AuthorsContainer = styled.div`
   display: flex;  
   height: 100vh;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
 `
 
 export const AuthorsContainerLeft = styled.div`
@@ -11,6 +15,10 @@ export const AuthorsContainerLeft = styled.div`
   align-items: center;
   justify-content: center;
   background-color: #101522;
+
+  @media screen and (max-width: 480px) {
+    height: 100%;
+  }
 `
 
 export const AuthorsContainerRight = styled.div`
@@ -25,6 +33,15 @@ export const LeftWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media screen and (max-width: 480px) {
+    margin-top: 100px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+  }
 `
 
 export const LeftWrapperH2 = styled.h2`
@@ -41,6 +58,7 @@ export const LeftWrapperH1 = styled.h1`
 export const LeftTitle = styled.div`
   height: 50px;
   overflow: hidden;
+  padding-bottom: 20px;
 `
 
 export const LeftTitleWrapper = styled.div`
@@ -61,6 +79,28 @@ export const LeftTitleWrapper = styled.div`
       transform: translateY(-200px);
     }
   }
+
+  @media screen and (max-width: 480px) {
+    margin: 20px 20px;
+    align-items: center;
+    
+
+    @keyframes move{
+      25%{
+        transform: translateY(-60px);
+      }
+      50%{
+        transform: translateY(-120px);
+      }
+      75%{
+        transform: translateY(-180px);
+      }
+      100%{
+        transform: translateY(-240px);
+      }
+    }
+    
+  }
 `
 
 
@@ -72,10 +112,18 @@ export const LeftTitleItem = styled.div`
   color: #01BF71;
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 480px){
+    text-align: center;
+  }
 `
 
 export const LeftDescription = styled.p`
-  color: #fff;  
+  color: #fff;
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 `
 
 export const AuthorImage = styled.img`
@@ -88,6 +136,12 @@ export const AuthorsAboutContainer = styled.div`
   height: 100vh;
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+  }
 `
 
 export const AboutContainerLeft = styled.div`
@@ -97,10 +151,18 @@ export const AboutContainerLeft = styled.div`
   justify-content: center;
   position: relative;
   height: 100%;
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
 `
 
 export const AboutContainerRight = styled.div`
-  flex: 1;  
+  flex: 1;
+
+  @media screen and (max-width: 480px) {
+    padding: 20px;
+  }
 `
 
 export const AboutLeftCard = styled.div`
@@ -109,6 +171,10 @@ export const AboutLeftCard = styled.div`
   border-radius: 30px;
   position: relative;
   overflow: hidden;
+
+  @media screen and (max-width: 480px) {
+    height: 30vh;
+  }
   
 `
 
@@ -120,6 +186,10 @@ export const AboutLeftCardBg = styled.div`
   top: 50px;
   left: 50px;
   background-color: #101522;
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 `
 
 export const AboutCardImg = styled.img`
@@ -145,6 +215,10 @@ export const AboutRightAward = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 `
 
 export const AboutRightAwardImage = styled.img`
@@ -170,6 +244,7 @@ export const AwardDescription = styled.p`
 export const ContactsContainer = styled.div`
   height: 100vh;
   position: relative;
+  
 `
 
 export const ContactsContainerBg = styled.div`
@@ -183,6 +258,12 @@ export const ContactsContainerBg = styled.div`
 export const ContactsContainerWrapper = styled.div`
   padding: 50px;
   display: flex;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    padding: 20px 50px;
+  }
+  
 `
 
 export const ContactsWrapperLeft = styled.div`
@@ -196,6 +277,10 @@ export const ContactsWrapperRight = styled.div`
 export const ContactsTitle = styled.h1`
   font-size: 50px;
   width: 80%;
+
+  @media screen and (max-width: 480px) {
+    font-size: 30px;
+  }
 `
 
 export const ContactsInfo = styled.div`
@@ -207,6 +292,11 @@ export const ContactsInfoItem = styled.div`
   margin: 50px 0;
   font-weight: 300;
   width: 70%;
+
+  @media screen and (max-width: 480px) {
+    margin: 20px 0;
+    width: 100%;
+  }
 `
 
 export const ContactsItemImg = styled.img`

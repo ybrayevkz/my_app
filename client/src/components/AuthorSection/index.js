@@ -51,7 +51,7 @@ export const AuthorSection = () => {
                         <LeftTitle>
                             <LeftTitleWrapper>
                                 <LeftTitleItem>Web-разработчик</LeftTitleItem>
-                                <LeftTitleItem>Студент Satbayev University</LeftTitleItem>
+                                <LeftTitleItem>Студент SU</LeftTitleItem>
                                 <LeftTitleItem>Преподаватель</LeftTitleItem>
                                 <LeftTitleItem>Анализатор данных</LeftTitleItem>
                                 <LeftTitleItem>Блогер</LeftTitleItem>

@@ -32,12 +32,12 @@ export const Footer = () => {
                     <FooterLinksWrapper>
                         <FooterLinkItems>
                             <FooterLinkTitle>О нас</FooterLinkTitle>
-                            <FooterLink to='/authors'>Автор проекта</FooterLink>
+                            <FooterLink to='/authors' onClick={toggleHome()}>Автор проекта</FooterLink>
                             <FooterLink to='/'>Конфиденциальность и условия</FooterLink>
                         </FooterLinkItems>
                         <FooterLinkItems>
                             <FooterLinkTitle>Для связи с нами</FooterLinkTitle>
-                            <FooterLink to='/'>Наши контакты</FooterLink>
+                            <FooterLink to='/contacts' onClick={toggleHome()}>Наши контакты</FooterLink>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                     <FooterLinksWrapper>
