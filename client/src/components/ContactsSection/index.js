@@ -8,9 +8,9 @@ import {ContactsWrapperLeft} from "./ContactsElements";
 import {ContactsContainerWrapper} from "./ContactsElements";
 import {ContactsInfoItem} from "./ContactsElements";
 import {ContactsWrapperRight} from "./ContactsElements";
-import PhoneIcon from "../../images/contacts_phone.png"
-import EmailIcon from "../../images/contacts_email.png"
-import AddressIcon from "../../images/contacts_address.png"
+import PhoneIcon from "../../images/ContactsPage/contacts_phone.png"
+import EmailIcon from "../../images/ContactsPage/contacts_email.png"
+import AddressIcon from "../../images/ContactsPage/contacts_address.png"
 import {ContactsRightDescription} from "./ContactsElements";
 import {ContactsRightForm} from "./ContactsElements";
 import {Button3} from "../Buttons/ButtonElement";

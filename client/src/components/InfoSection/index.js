@@ -14,6 +14,7 @@ import {ImgWrap} from "./InfoElements";
 import {Img} from "./InfoElements"
 export const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel,
                             img, alt, primary, dark, dark2, direct}) => {
+
     return(
         <>
           <InfoContainer lightBg={lightBg} id={id}>
@@ -39,7 +40,8 @@ export const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline
                                   offset={-80}
                                   primary={primary ? 1 : 0}
                                   dark={dark ? 1 : 0}
-                                  dark2={dark2 ? 1 : 0}>{buttonLabel}</Button2>
+                                  dark2={dark2 ? 1 : 0}
+                                  >{buttonLabel}</Button2>
 
                               </BtnWrap>
                           </TextWrapper>

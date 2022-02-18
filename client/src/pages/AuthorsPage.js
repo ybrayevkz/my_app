@@ -1,10 +1,10 @@
 import React, {useState} from "react";
-import {Sidebar} from "../components/Sidebar";
+import {Sidebar} from "../components/Sidebars/Sidebar";
 import {Footer} from "../components/Footer";
-import {Navbar} from "../components/Navbar";
+import {Navbar} from "../components/Navbars/Navbar";
 import {AuthorSection} from "../components/AuthorSection";
 
-export const AuthorsPage = () => {
+export const AuthorsPage = (props) => {
     const [isOpen, setIsOpen] = useState(false)
     const toggle = () =>{
         setIsOpen(!isOpen)

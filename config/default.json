@@ -1,6 +1,5 @@
 {
   "port": 5000,
-  "jwtSecret": "yernur ybrayev web",
-  "mongoUri": "mongodb+srv://YernurYbrayev:Molyaexe01@cluster0.1dfuc.mongodb.net/app?retryWrites=true&w=majority",
-  "baseUrl": "http://localhost:5000"
+  "mongoUri": "mongodb+srv://YernurYbrayev:Egehar39@cluster0.1dfuc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  "jwtSecret": "yernur ybrayev mern"
 }

@@ -17,7 +17,7 @@ export const homeObjOne = {
     img: homepage_programmer_image,
     alt: 'Car',
     dark: true,
-    direct: '/',
+    direct: '/aboutweb',
     primary: true,
     darkText: false
 }
@@ -33,8 +33,8 @@ export const homeObjTwo = {
     buttonLabel: 'Подробнее о сертификации...',
     imgStart: true,
     img: homepage_certication_image,
-    alt: 'Electrocar',
-    direct: '/',
+    alt: 'homepage_certification_image',
+    direct: '/certification',
     dark: false,
     primary: false,
     darkText: true
@@ -54,7 +54,7 @@ export const homeObjThree = {
     img: homepage_account_image,
     alt: 'homepage_accont_image',
     dark: false,
-    direct: '/signup',
+    direct: '/auth',
     primary: false,
     darkText: true
 }

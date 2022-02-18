@@ -1,5 +1,5 @@
 import React from "react";
-import author_image from "../../images/myimage.png"
+import author_image from "../../images/AuthorsPage/myimage.png"
 import {AuthorsContainer} from "./AuthorsSectionElements";
 import {AuthorsContainerLeft} from "./AuthorsSectionElements";
 import {AuthorsContainerRight} from "./AuthorsSectionElements";
@@ -16,17 +16,17 @@ import {AboutContainerLeft} from "./AuthorsSectionElements";
 import {AboutContainerRight} from "./AuthorsSectionElements";
 import {AboutLeftCard} from "./AuthorsSectionElements";
 import {AboutCardImg} from "./AuthorsSectionElements";
-import aboutpage_about_second_image from "../../images/about_page_second_img.jpg"
+import aboutpage_about_second_image from "../../images/AuthorsPage/about_page_second_img.jpg"
 import {AboutLeftCardBg} from "./AuthorsSectionElements";
 import {AboutRightDescription} from "./AuthorsSectionElements";
 import {AboutRightSub} from "./AuthorsSectionElements";
 import {AboutRightTitle} from "./AuthorsSectionElements";
-import {AboutRightAward} from "./AuthorsSectionElements";
-import {AboutRightAwardImage} from "./AuthorsSectionElements";
-import about_award_image from "../../images/about_award_image.jpg"
-import {AboutAwardTexts} from "./AuthorsSectionElements";
-import {AwardTitle} from "./AuthorsSectionElements";
-import {AwardDescription} from "./AuthorsSectionElements";
+//import {AboutRightAward} from "./AuthorsSectionElements";
+//import {AboutRightAwardImage} from "./AuthorsSectionElements";
+//import about_award_image from "../../images/AuthorsPage/about_award_image.jpg"
+//import {AboutAwardTexts} from "./AuthorsSectionElements";
+//import {AwardTitle} from "./AuthorsSectionElements";
+//import {AwardDescription} from "./AuthorsSectionElements";
 import {ContactsContainer} from "./AuthorsSectionElements";
 import {ContactsContainerBg} from "./AuthorsSectionElements";
 import {ContactsContainerWrapper} from "./AuthorsSectionElements";
@@ -36,9 +36,9 @@ import {ContactsInfo} from "./AuthorsSectionElements";
 import {ContactsTitle} from "./AuthorsSectionElements";
 import {ContactsInfoItem} from "./AuthorsSectionElements";
 import {ContactsItemImg} from "./AuthorsSectionElements";
-import contacts_phone from "../../images/contacts_phone.png"
-import contacts_email from "../../images/contacts_email.png"
-import contacts_address from "../../images/contacts_address.png"
+import contacts_phone from "../../images/ContactsPage/contacts_phone.png"
+import contacts_email from "../../images/ContactsPage/contacts_email.png"
+import contacts_address from "../../images/ContactsPage/contacts_address.png"
 
 export const AuthorSection = () => {
     return(

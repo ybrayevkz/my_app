@@ -35,7 +35,7 @@ export const ContactsWrapperLeft = styled.div`
 export const ContactsWrapperRight = styled.div`
   flex: 1;
   display: flex;
-  align-items: center;
+  align-items: normal;
   justify-content: center;
   flex-direction: column;
 `
