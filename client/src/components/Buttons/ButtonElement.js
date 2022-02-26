@@ -36,6 +36,7 @@ export const Button2 = styled(LinkR)`
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
   transition: all 0.2s ease-in-out;
   
   &:hover{

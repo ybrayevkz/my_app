@@ -7,6 +7,7 @@ import {Footer} from "../components/Footer";
 import {AboutWebSection} from "../components/AboutWebSection";
 import {homeObjOne} from "../components/AboutWebSection/Data";
 import {homeObjTwo} from "../components/AboutWebSection/Data";
+import {Services} from "../components/AboutWebSection/Services";
 
 export const AboutWebPage = (props, isAuthenticated) => {
 
@@ -31,6 +32,7 @@ export const AboutWebPage = (props, isAuthenticated) => {
                 <Sidebar isOpen={isOpen} toggle={toggle}/>
                 <Navbar toggle={toggle}/>
                 <AboutWebSection {...homeObjOne}/>
+                <Services />
                 <AboutWebSection {...homeObjTwo}/>
                 <Footer />
             </>

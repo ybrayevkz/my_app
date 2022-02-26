@@ -1,7 +1,5 @@
-import homepage_programmer_image from "../../images/HomePage/homepage_programmer.svg";
-import homepage_account_image from "../../images/HomePage/homepage_account.svg";
-import homepage_certication_image from "../../images/HomePage/homepage_certification.svg";
-import about_web_page_img1 from "../../images/AboutWebPage/about_web_tech_obj1.svg"
+import about_web_page_img1 from "../../images/AboutWebPage/about_web_tech_obj1.svg";
+import web_developer from "../../images/AboutWebPage/web-developer.svg"
 
 
 
@@ -28,35 +26,20 @@ export const homeObjOne = {
 }
 
 export const homeObjTwo = {
-    id: 'discover',
-    lightBg: true,
-    lightText: false,
-    lightTextDesc: false,
-    topLine: 'Что вас ждет по окончанию каждого курса?',
-    headline: 'Вы будете сертифицированы по данному курсу',
-    description: 'Когда вы закончите обучения и задания данного курса вас ждет экзаменация по данному курсу на сертификат.',
-    buttonLabel: 'Подробнее о сертификации...',
-    imgStart: true,
-    img: homepage_certication_image,
-    alt: 'homepage_certification_image',
-    direct: '/certification',
-    dark: false,
-    primary: false,
-    darkText: true
-}
-
-export const homeObjThree = {
     id: 'signup',
-    lightBg: true,
-    lightText: false,
+    lightBg: false,
+    lightText: true,
     lightTextDesc: false,
-    topLine: 'Присоединяйся к нам',
-    headline: 'Создание аккаунта обойдется тебе всего лишь 2 минуты',
-    description: 'Аккаунт нужен для того что бы хранить все ваши результаты и достижения при прохождении наших курсов.' +
-        ' А так же для получения сертификата нам понадобится ваши данные.',
+    topLine: 'Немного о web-разработчиках',
+    headline: '',
+    description: '__Все что связано с интернетом включаю социальные сети и прграммы, платформы, порталы - дело рук web-разработчика.' +
+        'А что было бы если бы их не было? Сложно представить, да?! На данный момент мы уверенно можем сказать что web-разработчики' +
+        'как маски во время пандемии, они очень востребованны и соответственно заработные платы высокие. Но нельзя становиться разработчиком' +
+        'лишь хотев им стать, быть разработчиком а точнее стать разработчиком очень долго и трудно. А что бы как то скоротать этот процесс' +
+        'и облегчить я создал данный проект. От вас требуется лишь желание обучаться и время.',
     buttonLabel: 'Создать аккаунт!',
-    imgStart: false,
-    img: homepage_account_image,
+    imgStart: true,
+    img: web_developer,
     alt: 'homepage_accont_image',
     dark: false,
     direct: '/auth',

@@ -7,8 +7,6 @@ import {TextWrapper} from "./AboutWebElements";
 import {TopLine} from "./AboutWebElements";
 import {Heading} from "./AboutWebElements";
 import {Subtitle} from "./AboutWebElements";
-import {BtnWrap} from "./AboutWebElements";
-import {Button4} from "../Buttons/ButtonElement";
 import {Column2} from "./AboutWebElements";
 import {ImgWrap} from "./AboutWebElements";
 import {Img} from "./AboutWebElements"
