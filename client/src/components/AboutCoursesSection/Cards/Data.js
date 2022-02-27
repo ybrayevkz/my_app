@@ -13,7 +13,7 @@ import java from '../../../images/CoursesLogos/java-logo1.png'
 
 
 
-export const htmlCertification = {
+export const htmlCourse = {
     id: 'html',
     cardtitle: 'HTML',
     carddescription: 'Хотели ли вы получить сертификат по языку гипертекстовой разметки?',
@@ -22,77 +22,77 @@ export const htmlCertification = {
 
 }
 
-export const cssCertification = {
+export const cssCourse = {
     id: 'css',
     cardtitle: 'CSS',
     carddescription: 'Хотели ли вы получить сертификат по каскадным таблицам стилей?',
     img: css,
     alt: 'Car',
 }
-export const javascriptCertification = {
+export const javascriptCourse = {
     id: 'javascript',
     cardtitle: 'Javascript',
     carddescription: 'Хотели ли вы получить сертификат по языку программирания JS?',
     img: javascript,
     alt: 'Car',
 }
-export const typescriptCertification = {
+export const typescriptCourse = {
     id: 'typescript',
     cardtitle: 'Typescript',
     carddescription: 'Хотели ли вы получить сертификат по языку программирания TS?',
     img: typescript,
     alt: 'Car',
 }
-export const jqueryCertification = {
+export const jqueryCourse = {
     id: 'jquery',
     cardtitle: 'JQuery',
     carddescription: 'Хотели ли вы получить сертификат по набору функции jquery?',
     img: jquery,
     alt: 'Car',
 }
-export const reactCertification = {
+export const reactCourse = {
     id: 'react',
     cardtitle: 'React JS',
     carddescription: 'Хотели ли вы получить сертификат по фреймворку React js?',
     img: react,
     alt: 'Car',
 }
-export const angularCertification = {
+export const angularCourse = {
     id: 'angular',
     cardtitle: 'Angular JS',
     carddescription: 'Хотели ли вы получить сертификат по фреймворку Angular js?',
     img: angular,
     alt: 'Car',
 }
-export const sqlCertification = {
+export const sqlCourse = {
     id: 'sql',
     cardtitle: 'SQL',
     carddescription: 'Хотели ли вы получить сертификат по языку запросов данных',
     img: sql,
     alt: 'Car',
 }
-export const phpCertification = {
+export const phpCourse = {
     id: 'php',
     cardtitle: 'PHP',
     carddescription: 'Хотели ли вы получить сертификат по препроцессору гипертекста PHP',
     img: php,
     alt: 'Car',
 }
-export const nodejsCertification = {
+export const nodejsCourse = {
     id: 'nodejs',
     cardtitle: 'Node JS',
     carddescription: 'Хотели ли вы получить сертификат по серверной платформе Node JS',
     img: nodejs,
     alt: 'Car',
 }
-export const pythonCertification = {
+export const pythonCourse = {
     id: 'python',
     cardtitle: 'Python',
     carddescription: 'Хотели ли вы получить сертификат по языку программированию Python',
     img: python,
     alt: 'Car',
 }
-export const javaCertification = {
+export const javaCourse = {
     id: 'java',
     cardtitle: 'Java',
     carddescription: 'Хотели ли вы получить сертификат по языку программированию Java',
